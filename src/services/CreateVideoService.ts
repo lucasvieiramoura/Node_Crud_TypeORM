@@ -5,7 +5,7 @@ import { Video } from "../entities/Videos";
 type VideoRequest = {
     name: string,
     description: string,
-    duration: string,
+    duration: number,
     category_id : string,
 }
 
