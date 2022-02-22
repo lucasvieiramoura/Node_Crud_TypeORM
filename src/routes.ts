@@ -9,13 +9,13 @@ import { UpdateCategoryController } from "./controllers/UpdateCategoryController
 
 const routes = Router();
 
-routes.post("/categories", new CreateCategoryController().handle);
-routes.get("/categories", new GetAllCategoriesController().handle);
-routes.delete("/categories/:id", new DeleteCategoryController().handle);
-routes.put("/categories/:id", new UpdateCategoryController().handle);
+routes.post("/categories/api", new CreateCategoryController().handle);
+routes.get("/categories/api", new GetAllCategoriesController().handle);
+routes.delete("/categories/api/:id", new DeleteCategoryController().handle);
+routes.put("/categories/api/:id", new UpdateCategoryController().handle);
 
-routes.post('/videos', new CreateVideoController().handle);
-routes.get("/videos", new GetAllVideosController().handle);
+routes.post('/videos/api', new CreateVideoController().handle);
+routes.get("/videos/api", new GetAllVideosController().handle);
 
 
 export {routes};
